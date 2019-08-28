@@ -1,0 +1,242 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+html {
+  position: relative;
+  min-height: 100vh;
+  padding-bottom: 60px;
+  margin-left: calc(100vw - 100%);
+}
+
+@media only screen and (min-width: 480px) {
+  .wrapper {
+    max-width: 900px;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .column {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    img {
+      width: 30px;
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+  }
+}
+
+#test {
+  padding: 2px;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 9;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 767px) {
+  .sticky-postion {
+    position: sticky;
+    top: 102px;
+    background: white;
+    z-index: 9;
+    margin-bottom: 20px;
+  }
+
+  .winner-img-left {
+    position: absolute;
+    right: 18px;
+    top: 7px;
+    width: 25px !important;
+  }
+  .winner-img-right {
+    position: absolute;
+    left: 57px;
+    top: 7px;
+    width: 25px !important;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .mobile-table {
+    text-align: center !important;
+  }
+
+  .winner-img-left {
+    position: absolute;
+    top: 2px;
+    right: -28px;
+    width: 20px !important;
+  }
+  .winner-img-right {
+    position: absolute;
+    top: 2px;
+    left: -28px;
+    width: 20px !important;
+  }
+}
+
+.ui.tabular.menu .item {
+  width: 50% !important;
+}
+
+@media only screen and (max-width: 480px) {
+  .column:nth-of-type(2n + 2) {
+    display: flex !important;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .winner-img-right {
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    width: 20px !important;
+  }
+
+  .winner-img-left {
+    position: absolute;
+    top: 5px;
+    right: 12px;
+    width: 20px !important;
+  }
+
+  .column {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .section-title {
+    text-align: center !important;
+  }
+
+  .mobile-table {
+    text-align: center !important;
+  }
+}
+
+.activeWeek {
+  // background: rgba(200, 247, 197, 0.3) !important;
+}
+
+.toggleView {
+  max-height: 42vh;
+  overflow: hidden;
+  cursor: pointer;
+  transition: ease-in-out 150ms;
+}
+
+.toggleView:hover {
+  background: whitesmoke;
+  transition: ease-in-out 150ms;
+}
+
+.toggleView2 {
+  max-height: 42vh;
+  overflow: hidden;
+  cursor: pointer;
+  transition: ease-in-out 150ms;
+}
+
+.toggleView2:hover {
+  background: whitesmoke;
+  transition: ease-in-out 150ms;
+}
+
+.mobile-table td:nth-child(2),
+td:nth-child(4) {
+  font-weight: bold;
+}
+
+.down-arrow {
+  font-size: 1.5rem;
+  vertical-align: text-bottom;
+}
+
+.login-wrapper {
+  max-width: 500px !important;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.versus {
+  color: orangered !important;
+  font-size: 2rem !important;
+}
+
+.column img {
+  width: 30px;
+}
+
+.column p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-family: Roboto;
+  word-break: break-word;
+}
+
+.week-title {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.week-title::first-letter {
+  text-transform: uppercase;
+}
+
+.single-save-btn {
+  text-align: center !important;
+}
+
+footer {
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.addNewMatchTr {
+  transition: 350ms ease-in-out;
+}
+
+.addNewMatchTr,
+.saveNewMatchBtn {
+  display: none;
+}
+
+.teamNameTitle {
+  font-weight: bold;
+  margin: 0;
+}
+
+.tableDataLayout {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.tableDataLayout h4 {
+  margin: 0 !important;
+}
+
+.addNewPlayer {
+  display: none;
+}

@@ -1,0 +1,104 @@
+
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: Roboto, sans-serif;
+      }
+  
+      html {
+        position: relative;
+        min-height: 100vh;
+        padding-bottom: 60px;
+      }
+  
+      @media only screen and (min-width: 480px) {
+        .wrapper {
+          max-width: 900px;
+          width: 80%;
+          margin: 0 auto;
+        }
+  
+        .column {
+          display: flex !important;
+          align-items: center !important;
+          justify-content: space-evenly !important;
+        }
+      }
+
+      @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .mobile-table {
+            text-align: center !important;
+        }
+    }
+  
+      @media only screen and (max-width: 480px) {
+        .column:nth-of-type(2n+2) {
+          display: flex !important;
+          flex-direction: column-reverse;
+          align-items: center;
+          text-align: center;
+        }
+  
+        .column {
+          display: flex !important;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+        }
+  
+        .section-title {
+          text-align: center !important;
+        }
+
+        .mobile-table {
+            text-align: center !important;
+        }
+
+      }
+      
+      .mobile-table td:nth-child(2), td:nth-child(4) {
+        font-weight: bold;
+      }
+  
+      .down-arrow {
+        font-size: 1.5rem;
+        vertical-align: text-bottom;
+      }
+
+      .login-wrapper {
+        max-width: 500px !important;
+        width: 80%;
+        margin: 0 auto;
+    }
+  
+      .versus {
+        color: orangered !important;
+        font-size: 2rem !important;
+      }
+  
+      .column img {
+        width: 65px;
+      }
+  
+      .column p {
+        margin: 0;
+        font-size: 1.1rem;
+        font-family: Roboto;
+      }
+  
+      .week-title {
+        text-align: center;
+        font-size: 2.5rem;
+        margin: 0;
+      }
+  
+      footer {
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+  
+      .footer-logo {
+        width: 100px;
+      }
